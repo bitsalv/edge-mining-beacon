@@ -1,14 +1,21 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
+import { Card, CardContent } from '@/components/ui/card';
+import { CheckCircle } from 'lucide-react';
 
 const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="py-24 px-4">
-      <div className="container max-w-5xl mx-auto">
+    <section id="about" className="py-24 px-4 relative overflow-hidden">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-dark to-dark-accent opacity-50 pointer-events-none"></div>
+      
+      <div className="container max-w-5xl mx-auto relative z-10">
         <div className="flex flex-col md:flex-row gap-12">
           <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">About Edge Mining</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+              About Edge Mining
+            </h2>
             
             <p className="text-muted-text text-lg leading-relaxed mb-6">
               Edge Mining is a FOSS project that integrates Bitcoin mining with renewable energy systems. Designed for small and medium-sized power plants, it helps turn excess energy into economic value.
@@ -19,43 +26,28 @@ const AboutSection: React.FC = () => {
             </p>
           </div>
           
-          <div className="md:w-1/2 bg-dark-accent rounded-lg p-8">
-            <h3 className="text-xl font-semibold mb-4">Key Features</h3>
-            
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <div className="mr-4 mt-1 bg-white/10 rounded-full p-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                </div>
-                <span className="text-muted-text">Automated mining based on energy availability</span>
-              </li>
-              <li className="flex items-start">
-                <div className="mr-4 mt-1 bg-white/10 rounded-full p-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                </div>
-                <span className="text-muted-text">Heat recovery for space heating</span>
-              </li>
-              <li className="flex items-start">
-                <div className="mr-4 mt-1 bg-white/10 rounded-full p-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                </div>
-                <span className="text-muted-text">Perfect for small and medium-sized power plants</span>
-              </li>
-              <li className="flex items-start">
-                <div className="mr-4 mt-1 bg-white/10 rounded-full p-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                </div>
-                <span className="text-muted-text">Open-source and free to use</span>
-              </li>
-            </ul>
+          <div className="md:w-1/2">
+            <Card className="bg-dark-accent/70 backdrop-blur-sm border border-gray-800 shadow-xl shadow-blue-900/5">
+              <CardContent className="p-8">
+                <h3 className="font-display text-xl font-semibold mb-6 text-white">Key Features</h3>
+                
+                <ul className="space-y-4">
+                  {[
+                    "Automated mining based on energy availability",
+                    "Heat recovery for space heating",
+                    "Perfect for small and medium-sized power plants",
+                    "Open-source and free to use"
+                  ].map((feature, index) => (
+                    <li key={index} className="flex items-start group">
+                      <div className="mr-4 mt-1 text-blue-400 group-hover:text-blue-300 transition-standard">
+                        <CheckCircle size={18} />
+                      </div>
+                      <span className="text-light-text group-hover:text-white transition-standard">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>

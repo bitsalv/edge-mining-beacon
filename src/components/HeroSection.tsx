@@ -1,16 +1,20 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-16 pb-32 px-4">
+    <section className="relative min-h-screen flex flex-col items-center justify-center pt-16 pb-32 px-4 overflow-hidden">
+      {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(55,65,81,0.2)_0,rgba(17,24,39,0)_65%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(58,134,255,0.15)_0,rgba(17,24,39,0)_70%)]"></div>
+        <div className="absolute top-1/4 -left-20 w-72 h-72 bg-blue-500/10 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-1/4 -right-20 w-72 h-72 bg-purple-500/10 rounded-full filter blur-3xl"></div>
       </div>
       
       <div className="container max-w-5xl mx-auto text-center z-10 animate-fade-in">
-        <div className="mb-8">
+        <div className="mb-8 animate-float">
           <img 
             src="/lovable-uploads/693aa3a5-b345-4a9f-a41d-8313d07bdf3a.png" 
             alt="Edge Mining Logo" 
@@ -18,7 +22,7 @@ const HeroSection: React.FC = () => {
           />
         </div>
         
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+        <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 gradient-text">
           Optimizing Renewable Energy Through Bitcoin Mining
         </h1>
         
@@ -27,18 +31,22 @@ const HeroSection: React.FC = () => {
         </p>
         
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a 
-            href="#get-involved"
-            className="px-8 py-3 bg-white text-dark font-medium rounded-md hover:bg-opacity-90 transition-standard w-full sm:w-auto text-center"
+          <Button
+            asChild
+            size="lg"
+            className="bg-primary hover:bg-primary-hover text-white font-medium rounded-md transition-standard w-full sm:w-auto text-center"
           >
-            Get Involved
-          </a>
-          <a 
-            href="#about"
-            className="px-8 py-3 bg-transparent border border-gray-700 text-light-text font-medium rounded-md hover:bg-dark-accent transition-standard w-full sm:w-auto text-center"
+            <a href="#get-involved">Get Involved</a>
+          </Button>
+          
+          <Button 
+            asChild
+            variant="outline"
+            size="lg"
+            className="border-gray-700 bg-dark-accent/50 hover:bg-dark-accent text-light-text font-medium rounded-md transition-standard w-full sm:w-auto text-center"
           >
-            Learn More
-          </a>
+            <a href="#about">Learn More</a>
+          </Button>
         </div>
       </div>
     </section>

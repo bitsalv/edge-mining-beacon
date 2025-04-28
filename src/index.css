@@ -39,7 +39,7 @@
   }
   
   body {
-    @apply bg-dark text-light-text;
+    @apply bg-gradient-to-br from-dark via-dark-accent to-dark text-light-text;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02";
   }
 }
@@ -47,5 +47,13 @@
 @layer utilities {
   .transition-standard {
     @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-blue-900/20 hover:scale-105;
   }
 }
