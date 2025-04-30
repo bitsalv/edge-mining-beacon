@@ -20,41 +20,37 @@ const Header: React.FC = () => {
         <a href="#" className="flex items-center">
           <img src="/lovable-uploads/693aa3a5-b345-4a9f-a41d-8313d07bdf3a.png" 
                alt="Edge Mining Logo" 
-               className="h-8 w-auto" />
+               className="h-8 w-auto object-contain" />
         </a>
 
         <div className="hidden md:flex items-center space-x-6">
-          <a href="#about" className="text-muted-text hover:text-light-text transition-standard">
+          <a href="#about" className="text-light-text hover:text-accent transition-standard flex items-center gap-1">
             About
           </a>
           <Button 
             variant="ghost" 
-            className="text-muted-text hover:text-light-text transition-standard flex items-center gap-1"
+            className="text-light-text hover:text-accent transition-standard flex items-center gap-1"
             onClick={scrollToForm}
           >
-            <MessageSquare size={18} />
+            <MessageSquare size={18} className="text-accent" />
             <span>Discord</span>
           </Button>
-          <div className="pl-2 border-l border-gray-700">
-            <a 
-              href="https://github.com/edgemining" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-text hover:text-light-text transition-standard"
-            >
-              <Github size={18} />
-              <span>Github</span>
-            </a>
-          </div>
-          <div>
-            <a 
-              href="#" 
-              className="flex items-center gap-2 text-muted-text hover:text-light-text transition-standard"
-            >
-              <FileText size={18} />
-              <span>Docs</span>
-            </a>
-          </div>
+          <a 
+            href="#" 
+            className="text-light-text hover:text-accent transition-standard flex items-center gap-1"
+          >
+            <FileText size={18} className="text-accent" />
+            <span>Docs</span>
+          </a>
+          <a 
+            href="https://github.com/edgemining" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-light-text hover:text-accent transition-standard flex items-center gap-1"
+          >
+            <Github size={18} className="text-accent" />
+            <span>Github</span>
+          </a>
         </div>
 
         <div className="md:hidden flex items-center">
@@ -101,26 +97,26 @@ const Header: React.FC = () => {
                 setIsMobileMenuOpen(false);
               }}
             >
-              <MessageSquare size={18} />
+              <MessageSquare size={18} className="text-accent" />
               <span>Discord</span>
             </Button>
+            <a 
+              href="#" 
+              className="flex items-center gap-2 text-light-text py-2 px-4 rounded-md hover:bg-dark transition-standard"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <FileText size={18} className="text-accent" />
+              <span>Docs</span>
+            </a>
             <a 
               href="https://github.com/edgemining" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center justify-between text-light-text py-2 px-4 rounded-md hover:bg-dark transition-standard"
+              className="flex items-center gap-2 text-light-text py-2 px-4 rounded-md hover:bg-dark transition-standard"
               onClick={() => setIsMobileMenuOpen(false)}
             >
+              <Github size={18} className="text-accent" />
               <span>Github</span>
-              <Github size={18} />
-            </a>
-            <a 
-              href="#" 
-              className="flex items-center justify-between text-light-text py-2 px-4 rounded-md hover:bg-dark transition-standard"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              <span>Docs</span>
-              <FileText size={18} />
             </a>
           </nav>
         </div>

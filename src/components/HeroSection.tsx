@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
               <img 
                 src="/lovable-uploads/693aa3a5-b345-4a9f-a41d-8313d07bdf3a.png" 
                 alt="Edge Mining Logo" 
-                className="h-28 md:h-36 mx-auto lg:mx-0"
+                className="h-28 md:h-36 mx-auto lg:mx-0 object-contain"
               />
             </div>
             
@@ -28,7 +28,7 @@ const HeroSection: React.FC = () => {
               Optimizing Renewable Energy Through Bitcoin Mining
             </h1>
             
-            <p className="text-xl text-muted-text max-w-2xl mx-auto lg:mx-0 mb-8">
+            <p className="text-xl text-light-text max-w-2xl mx-auto lg:mx-0 mb-8">
               Turn excess renewable energy into economic value with intelligent, automated Bitcoin mining.
             </p>
             
