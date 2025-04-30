@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Github, FileText } from 'lucide-react';
+import { Github, FileText, ExternalLink } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -12,6 +12,10 @@ const Header: React.FC = () => {
     if (formSection) {
       formSection.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const openSurvey = () => {
+    window.open("https://app.formbricks.com/s/cma4k1hfj0jn7vw019sizlnio", "_blank");
   };
   
   return (
@@ -50,6 +54,14 @@ const Header: React.FC = () => {
             <Github size={18} className="text-accent" />
             <span>Github</span>
           </a>
+          <Button 
+            onClick={openSurvey} 
+            variant="outline"
+            className="bg-transparent border border-accent text-white hover:bg-accent/20 flex items-center gap-1"
+          >
+            <ExternalLink size={16} className="text-accent" />
+            <span>Survey</span>
+          </Button>
         </div>
 
         <div className="md:hidden flex items-center">
@@ -108,6 +120,17 @@ const Header: React.FC = () => {
               <Github size={18} className="text-accent" />
               <span>Github</span>
             </a>
+            <Button 
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                openSurvey();
+              }}
+              variant="outline"
+              className="bg-transparent border border-accent text-white hover:bg-accent/20 flex items-center gap-1 justify-center"
+            >
+              <ExternalLink size={16} className="text-accent" />
+              <span>Survey</span>
+            </Button>
           </nav>
         </div>
       )}
