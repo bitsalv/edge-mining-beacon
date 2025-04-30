@@ -61,7 +61,7 @@ const Header: React.FC = () => {
             rel="noopener noreferrer"
             className="text-white hover:text-accent transition-all font-medium flex items-center gap-1"
           >
-            <MessageCircle size={18} className="text-purple-500" />
+            <MessageCircle size={18} className="text-accent" />
             <span>Discord</span>
           </a>
           <Button 
@@ -137,7 +137,7 @@ const Header: React.FC = () => {
               className="flex items-center gap-2 text-white py-2 px-4 rounded-md hover:bg-accent/10 transition-all font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <MessageCircle size={18} className="text-purple-500" />
+              <MessageCircle size={18} className="text-accent" />
               <span>Discord</span>
             </a>
             <Button 
