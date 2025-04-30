@@ -50,11 +50,11 @@
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-400 via-accent to-purple-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-white via-accent to-blue-400 bg-clip-text text-transparent;
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:shadow-blue-900/20 hover:scale-105;
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 hover:scale-105;
   }
 
   .accent-glow {

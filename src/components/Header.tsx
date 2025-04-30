@@ -2,10 +2,17 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Github } from 'lucide-react';
+import { Github, FileText } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  const scrollToForm = () => {
+    const formSection = document.getElementById('contact-form');
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   
   return (
     <header className="fixed top-0 left-0 right-0 z-50 py-4 bg-dark/80 backdrop-blur-md border-b border-gray-800">
@@ -20,9 +27,13 @@ const Header: React.FC = () => {
           <a href="#about" className="text-muted-text hover:text-light-text transition-standard">
             About
           </a>
-          <a href="#get-involved" className="text-muted-text hover:text-light-text transition-standard">
-            Get Involved
-          </a>
+          <Button 
+            variant="ghost" 
+            className="text-muted-text hover:text-light-text transition-standard"
+            onClick={scrollToForm}
+          >
+            Contact
+          </Button>
           <div className="pl-2 border-l border-gray-700">
             <a 
               href="https://github.com/edgemining" 
@@ -30,11 +41,17 @@ const Header: React.FC = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-text hover:text-light-text transition-standard"
             >
-              <span>Star</span>
-              <div className="flex items-center justify-center bg-dark-accent rounded-full h-6 w-6">
-                <span className="text-xs font-medium">35</span>
-              </div>
               <Github size={18} />
+              <span>Github</span>
+            </a>
+          </div>
+          <div>
+            <a 
+              href="#" 
+              className="flex items-center gap-2 text-muted-text hover:text-light-text transition-standard"
+            >
+              <FileText size={18} />
+              <span>Docs</span>
             </a>
           </div>
         </div>
@@ -75,13 +92,16 @@ const Header: React.FC = () => {
             >
               About
             </a>
-            <a 
-              href="#get-involved" 
-              className="text-light-text py-2 px-4 rounded-md hover:bg-dark transition-standard"
-              onClick={() => setIsMobileMenuOpen(false)}
+            <Button
+              className="justify-start text-light-text py-2 px-4 rounded-md hover:bg-dark transition-standard"
+              variant="ghost"
+              onClick={() => {
+                scrollToForm();
+                setIsMobileMenuOpen(false);
+              }}
             >
-              Get Involved
-            </a>
+              Contact
+            </Button>
             <a 
               href="https://github.com/edgemining" 
               target="_blank" 
@@ -89,8 +109,16 @@ const Header: React.FC = () => {
               className="flex items-center justify-between text-light-text py-2 px-4 rounded-md hover:bg-dark transition-standard"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <span>GitHub</span>
+              <span>Github</span>
               <Github size={18} />
+            </a>
+            <a 
+              href="#" 
+              className="flex items-center justify-between text-light-text py-2 px-4 rounded-md hover:bg-dark transition-standard"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <span>Docs</span>
+              <FileText size={18} />
             </a>
           </nav>
         </div>
