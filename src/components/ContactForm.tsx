@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "@/components/ui/use-toast";
-import { MessageSquare } from 'lucide-react';
+import { Send } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -49,14 +49,8 @@ const ContactForm: React.FC = () => {
   }
 
   return (
-    <div className="w-full max-w-md mx-auto">
-      <div className="flex items-center justify-center mb-6">
-        <div className="h-12 w-12 flex items-center justify-center bg-accent rounded-full">
-          <MessageSquare size={24} className="text-white" />
-        </div>
-      </div>
-      
-      <h3 className="text-xl font-display font-semibold mb-4 text-center text-light-text">Join our Discord</h3>
+    <div className="w-full max-w-md mx-auto">      
+      <h3 className="text-2xl font-display font-semibold mb-6 text-center text-light-text">Join our Discord</h3>
       
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -67,7 +61,7 @@ const ContactForm: React.FC = () => {
               <FormItem>
                 <FormLabel className="text-light-text">Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="Your name" className="bg-white border-gray-200 text-light-text" {...field} />
+                  <Input placeholder="Your name" className="bg-white border-accent/20 text-light-text focus-visible:ring-accent/50" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -81,7 +75,7 @@ const ContactForm: React.FC = () => {
               <FormItem>
                 <FormLabel className="text-light-text">Email</FormLabel>
                 <FormControl>
-                  <Input placeholder="Your email" className="bg-white border-gray-200 text-light-text" {...field} />
+                  <Input placeholder="Your email" className="bg-white border-accent/20 text-light-text focus-visible:ring-accent/50" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -97,7 +91,7 @@ const ContactForm: React.FC = () => {
                 <FormControl>
                   <Textarea 
                     placeholder="How can we help you?" 
-                    className="bg-white border-gray-200 text-light-text min-h-[120px]" 
+                    className="bg-white border-accent/20 text-light-text min-h-[120px] focus-visible:ring-accent/50" 
                     {...field} 
                   />
                 </FormControl>
@@ -109,9 +103,16 @@ const ContactForm: React.FC = () => {
           <Button 
             type="submit" 
             disabled={isSubmitting}
-            className="w-full bg-accent hover:bg-accent/80 text-white font-medium"
+            className="w-full bg-accent hover:bg-accent/80 text-white font-medium transition-all gap-2"
           >
-            {isSubmitting ? "Sending..." : "Join Discord"}
+            {isSubmitting ? (
+              "Connecting..."
+            ) : (
+              <>
+                Join Discord
+                <Send size={16} className="ml-1" />
+              </>
+            )}
           </Button>
         </form>
       </Form>

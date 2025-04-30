@@ -19,7 +19,7 @@ const Header: React.FC = () => {
   };
   
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 py-4 bg-[#191a2e] backdrop-blur-lg border-b border-accent/10 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 py-4 bg-accent/95 backdrop-blur-lg border-b border-accent/10 shadow-sm">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <a href="#" className="flex items-center">
           <img 
@@ -32,42 +32,42 @@ const Header: React.FC = () => {
         <div className="hidden md:flex items-center space-x-6">
           <a 
             href="#about" 
-            className="text-white hover:text-accent transition-all font-medium flex items-center gap-1"
+            className="text-white hover:text-white/80 transition-all font-medium flex items-center gap-1"
           >
-            <Info size={18} className="text-accent" />
+            <Info size={18} className="text-white" />
             <span>About</span>
           </a>
           <a 
             href="https://github.com/edge-mining/docs" 
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-accent transition-all font-medium flex items-center gap-1"
+            className="text-white hover:text-white/80 transition-all font-medium flex items-center gap-1"
           >
-            <FileText size={18} className="text-accent" />
+            <FileText size={18} className="text-white" />
             <span>Docs</span>
           </a>
           <a 
             href="https://github.com/edge-mining" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-white hover:text-accent transition-all font-medium flex items-center gap-1"
+            className="text-white hover:text-white/80 transition-all font-medium flex items-center gap-1"
           >
-            <Github size={18} className="text-accent" />
+            <Github size={18} className="text-white" />
             <span>Github</span>
           </a>
           <a 
             href="https://discord.gg/edgemining" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-white hover:text-accent transition-all font-medium flex items-center gap-1"
+            className="text-white hover:text-white/80 transition-all font-medium flex items-center gap-1"
           >
-            <MessageCircle size={18} className="text-accent" />
+            <MessageCircle size={18} className="text-white" />
             <span>Discord</span>
           </a>
           <Button 
             onClick={openSurveyForm} 
             variant="outline"
-            className="bg-transparent border border-accent text-white hover:bg-accent/20 flex items-center gap-1"
+            className="bg-transparent border border-white text-white hover:bg-white/20 flex items-center gap-1"
           >
             <span>Survey</span>
           </Button>
@@ -100,44 +100,44 @@ const Header: React.FC = () => {
       
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-[#191a2e]/95 backdrop-blur-lg p-4 border-b border-accent/10 animate-fade-in shadow-lg">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-accent/95 backdrop-blur-lg p-4 border-b border-accent/10 animate-fade-in shadow-lg">
           <nav className="flex flex-col space-y-3">
             <a 
               href="#about" 
-              className="flex items-center gap-2 text-white py-2 px-4 rounded-md hover:bg-accent/10 transition-all font-medium"
+              className="flex items-center gap-2 text-white py-2 px-4 rounded-md hover:bg-white/10 transition-all font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <Info size={18} className="text-accent" />
+              <Info size={18} className="text-white" />
               <span>About</span>
             </a>
             <a 
               href="https://github.com/edge-mining/docs" 
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-white py-2 px-4 rounded-md hover:bg-accent/10 transition-all font-medium"
+              className="flex items-center gap-2 text-white py-2 px-4 rounded-md hover:bg-white/10 transition-all font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <FileText size={18} className="text-accent" />
+              <FileText size={18} className="text-white" />
               <span>Docs</span>
             </a>
             <a 
               href="https://github.com/edge-mining" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-white py-2 px-4 rounded-md hover:bg-accent/10 transition-all font-medium"
+              className="flex items-center gap-2 text-white py-2 px-4 rounded-md hover:bg-white/10 transition-all font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <Github size={18} className="text-accent" />
+              <Github size={18} className="text-white" />
               <span>Github</span>
             </a>
             <a 
               href="https://discord.gg/edgemining" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-white py-2 px-4 rounded-md hover:bg-accent/10 transition-all font-medium"
+              className="flex items-center gap-2 text-white py-2 px-4 rounded-md hover:bg-white/10 transition-all font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <MessageCircle size={18} className="text-accent" />
+              <MessageCircle size={18} className="text-white" />
               <span>Discord</span>
             </a>
             <Button 
@@ -146,7 +146,7 @@ const Header: React.FC = () => {
                 openSurveyForm();
               }}
               variant="outline"
-              className="bg-transparent border border-accent text-white hover:bg-accent/20 flex items-center justify-center"
+              className="bg-transparent border border-white text-white hover:bg-white/20 flex items-center justify-center"
             >
               <span>Survey</span>
             </Button>
