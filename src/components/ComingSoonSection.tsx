@@ -3,6 +3,7 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
 import { BookOpen, BarChart2 } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const ComingSoonSection: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const ComingSoonSection: React.FC = () => {
       
       <div className="container max-w-5xl mx-auto text-center relative z-10">
         <h2 className="font-display text-3xl md:text-4xl font-bold mb-8 text-accent">
-          Coming Soon
+          Resources
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8">
@@ -23,9 +24,18 @@ const ComingSoonSection: React.FC = () => {
                 <BookOpen size={24} className="text-white" />
               </div>
               <h3 className="text-xl font-display font-semibold mb-4 text-light-text">Documentation</h3>
-              <p className="text-muted-text">
+              <p className="text-muted-text mb-6">
                 Complete guides and step-by-step tutorials on integrating Edge Mining with your renewable energy system for optimal results.
               </p>
+              <Button 
+                asChild
+                variant="outline"
+                className="bg-transparent border border-accent text-light-text hover:bg-accent/10"
+              >
+                <a href="https://github.com/edge-mining/docs" target="_blank" rel="noopener noreferrer">
+                  View Documentation
+                </a>
+              </Button>
             </CardContent>
           </Card>
           
@@ -37,7 +47,7 @@ const ComingSoonSection: React.FC = () => {
               </div>
               <h3 className="text-xl font-display font-semibold mb-4 text-light-text">Blog</h3>
               <p className="text-muted-text">
-                Coming soon! Stay updated with case studies, best practices, and insights from our team and community members.
+                Coming Soon!
               </p>
             </CardContent>
           </Card>

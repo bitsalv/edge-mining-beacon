@@ -13,10 +13,6 @@ const Header: React.FC = () => {
       formSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-  const openSurveyForm = () => {
-    window.open("https://app.formbricks.com/s/cma4k1hfj0jn7vw019sizlnio", "_blank");
-  };
   
   return (
     <header className="fixed top-0 left-0 right-0 z-50 py-4 bg-accent/95 backdrop-blur-lg border-b border-accent/10 shadow-sm">
@@ -64,13 +60,6 @@ const Header: React.FC = () => {
             <MessageCircle size={18} className="text-white" />
             <span>Discord</span>
           </a>
-          <Button 
-            onClick={openSurveyForm} 
-            variant="outline"
-            className="bg-transparent border border-white text-white hover:bg-white/20 flex items-center gap-1"
-          >
-            <span>Survey</span>
-          </Button>
         </div>
 
         <div className="md:hidden flex items-center">
@@ -140,16 +129,6 @@ const Header: React.FC = () => {
               <MessageCircle size={18} className="text-white" />
               <span>Discord</span>
             </a>
-            <Button 
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-                openSurveyForm();
-              }}
-              variant="outline"
-              className="bg-transparent border border-white text-white hover:bg-white/20 flex items-center justify-center"
-            >
-              <span>Survey</span>
-            </Button>
           </nav>
         </div>
       )}
