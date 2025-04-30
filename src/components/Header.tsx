@@ -15,16 +15,21 @@ const Header: React.FC = () => {
   };
   
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 py-4 bg-dark/80 backdrop-blur-md border-b border-gray-800">
+    <header className="fixed top-0 left-0 right-0 z-50 py-4 bg-dark/80 backdrop-blur-md border-b border-gray-800/50">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <img src="/lovable-uploads/693aa3a5-b345-4a9f-a41d-8313d07bdf3a.png" 
-               alt="Edge Mining Logo" 
-               className="h-8 w-auto object-contain" />
+          <img 
+            src="/lovable-uploads/693aa3a5-b345-4a9f-a41d-8313d07bdf3a.png" 
+            alt="Edge Mining Logo" 
+            className="h-10 w-auto object-contain" 
+          />
         </a>
 
         <div className="hidden md:flex items-center space-x-6">
-          <a href="#about" className="text-light-text hover:text-accent transition-standard flex items-center gap-1">
+          <a 
+            href="#about" 
+            className="text-light-text hover:text-accent transition-standard"
+          >
             About
           </a>
           <Button 

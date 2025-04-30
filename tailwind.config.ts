@@ -30,16 +30,16 @@ export default {
 				'light-text': '#ffffff',
 				'muted-text': '#a1a1a1',
 				primary: {
-					DEFAULT: '#3a86ff',
+					DEFAULT: '#8E9196', // Gray from the logo
 					foreground: '#ffffff',
-					hover: '#2563eb'
+					hover: '#7a7d82'
 				},
 				secondary: {
 					DEFAULT: '#8338ec',
 					foreground: '#ffffff'
 				},
 				accent: {
-					DEFAULT: '#00e5b0', // Teal accent color
+					DEFAULT: '#E9967A', // Warm complementary color (Dark Salmon)
 					foreground: '#1a1a1a'
 				},
 				destructive: {

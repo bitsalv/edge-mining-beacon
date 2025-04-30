@@ -24,7 +24,7 @@ const GetInvolvedSection: React.FC = () => {
         </h2>
         
         <p className="text-xl text-muted-text max-w-2xl mx-auto mb-12">
-          Want to get in touch and contribute? Join our community and help us optimize renewable energy through Bitcoin mining.
+          Join our growing community of developers and energy enthusiasts. Together, we're building the future of renewable energy optimization.
         </p>
         
         <div className="grid md:grid-cols-2 gap-8">
@@ -34,7 +34,7 @@ const GetInvolvedSection: React.FC = () => {
                 <MessageCircle size={24} className="text-dark" />
               </div>
               <h3 className="text-xl font-display font-semibold mb-4 text-white">Join Discord</h3>
-              <p className="text-muted-text mb-6 flex-grow">Connect with our community to ask questions and share ideas.</p>
+              <p className="text-muted-text mb-6 flex-grow">Connect with our community to discuss ideas, ask questions, and collaborate on new features.</p>
               <Button onClick={scrollToForm} className="bg-accent hover:bg-accent/80 text-dark font-medium border-0 w-full">
                 Join Discord
               </Button>
@@ -47,7 +47,7 @@ const GetInvolvedSection: React.FC = () => {
                 <Github size={24} className="text-dark" />
               </div>
               <h3 className="text-xl font-display font-semibold mb-4 text-white">View on GitHub</h3>
-              <p className="text-muted-text mb-6 flex-grow">Browse our source code, submit issues, and contribute to development.</p>
+              <p className="text-muted-text mb-6 flex-grow">Explore our codebase, contribute to development, or fork the project to create your own solution.</p>
               <Button asChild className="bg-accent hover:bg-accent/80 text-dark font-medium border-0 w-full">
                 <a href="https://github.com/edgemining" target="_blank" rel="noopener noreferrer">
                   View Code

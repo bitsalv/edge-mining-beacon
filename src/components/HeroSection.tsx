@@ -25,11 +25,11 @@ const HeroSection: React.FC = () => {
             </div>
             
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
-              Optimizing Renewable Energy Through Bitcoin Mining
+              Maximizing Renewable Energy Value Through Bitcoin Mining
             </h1>
             
             <p className="text-xl text-light-text max-w-2xl mx-auto lg:mx-0 mb-8">
-              Turn excess renewable energy into economic value with intelligent, automated Bitcoin mining.
+              Convert surplus renewable energy into Bitcoin with our intelligent, automated mining solution designed specifically for green energy producers.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
@@ -47,7 +47,7 @@ const HeroSection: React.FC = () => {
                 size="lg"
                 className="border-gray-700 bg-dark-accent/50 hover:bg-dark-accent text-light-text font-medium rounded-md transition-standard w-full sm:w-auto text-center"
               >
-                <a href="#about">Docs</a>
+                <a href="#about">Documentation</a>
               </Button>
             </div>
           </div>

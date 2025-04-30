@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             <img 
               src="/lovable-uploads/693aa3a5-b345-4a9f-a41d-8313d07bdf3a.png" 
               alt="Edge Mining Logo" 
-              className="h-8 w-auto object-contain"
+              className="h-10 w-auto object-contain" 
             />
           </div>
           

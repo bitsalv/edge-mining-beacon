@@ -24,7 +24,7 @@ const ComingSoonSection: React.FC = () => {
               </div>
               <h3 className="text-xl font-display font-semibold mb-4 text-white">Documentation</h3>
               <p className="text-muted-text">
-                Comprehensive guides and tutorials on setting up and optimizing Edge Mining with your renewable energy system.
+                Complete guides and step-by-step tutorials on integrating Edge Mining with your renewable energy system for optimal results.
               </p>
             </CardContent>
           </Card>
@@ -37,7 +37,7 @@ const ComingSoonSection: React.FC = () => {
               </div>
               <h3 className="text-xl font-display font-semibold mb-4 text-white">Blog</h3>
               <p className="text-muted-text">
-                Coming soon! Stay updated with the latest developments, case studies, and insights from the Edge Mining team.
+                Coming soon! Stay updated with case studies, best practices, and insights from our team and community members.
               </p>
             </CardContent>
           </Card>
