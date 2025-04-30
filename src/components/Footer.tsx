@@ -10,15 +10,7 @@ const Footer: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-dark to-dark-accent"></div>
       
       <div className="container max-w-5xl mx-auto relative z-10">
-        <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-          <div className="mb-6 md:mb-0">
-            <img 
-              src="/lovable-uploads/52b0ec8b-cc4c-45fc-b170-16111d3df6e0.png" 
-              alt="Edge Mining Logo" 
-              className="h-12 w-auto object-contain" 
-            />
-          </div>
-          
+        <div className="flex flex-col md:flex-row items-center justify-center mb-8">
           <div className="flex items-center space-x-8">
             <a href="#about" className="text-light-text hover:text-accent transition-all font-medium">
               About
