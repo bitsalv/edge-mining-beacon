@@ -24,7 +24,7 @@
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
-    --radius: 0.5rem;
+    --radius: 0.75rem;
   }
 }
 
@@ -41,6 +41,7 @@
   body {
     @apply bg-dark text-light-text;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+    background-image: radial-gradient(circle at 50% 20%, #1A1F2C, #12151f);
   }
 }
 
@@ -54,7 +55,7 @@
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 hover:scale-105;
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 hover:scale-103;
   }
 
   .accent-glow {
@@ -62,6 +63,28 @@
   }
 
   .glass-effect {
-    @apply backdrop-blur-sm bg-dark-accent/80 border border-white/10;
+    @apply backdrop-blur-md bg-dark-accent/80 border border-white/10 rounded-lg shadow-lg;
   }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent/70;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1F2C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8E0CBB30;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8E0CBB50;
 }
