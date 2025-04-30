@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Github, FileText, ExternalLink } from 'lucide-react';
+import { Github, FileText, Info, Discord } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,7 +14,7 @@ const Header: React.FC = () => {
     }
   };
 
-  const openSurvey = () => {
+  const openSurveyForm = () => {
     window.open("https://app.formbricks.com/s/cma4k1hfj0jn7vw019sizlnio", "_blank");
   };
   
@@ -32,9 +32,10 @@ const Header: React.FC = () => {
         <div className="hidden md:flex items-center space-x-6">
           <a 
             href="#about" 
-            className="text-white hover:text-accent transition-all font-medium"
+            className="text-white hover:text-accent transition-all font-medium flex items-center gap-1"
           >
-            About
+            <Info size={18} className="text-accent" />
+            <span>About</span>
           </a>
           <a 
             href="https://github.com/edge-mining/docs" 
@@ -54,12 +55,20 @@ const Header: React.FC = () => {
             <Github size={18} className="text-accent" />
             <span>Github</span>
           </a>
+          <a 
+            href="https://discord.gg/edgemining" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white hover:text-accent transition-all font-medium flex items-center gap-1"
+          >
+            <Discord size={18} className="text-accent" />
+            <span>Discord</span>
+          </a>
           <Button 
-            onClick={openSurvey} 
+            onClick={openSurveyForm} 
             variant="outline"
             className="bg-transparent border border-accent text-white hover:bg-accent/20 flex items-center gap-1"
           >
-            <ExternalLink size={16} className="text-accent" />
             <span>Survey</span>
           </Button>
         </div>
@@ -95,10 +104,11 @@ const Header: React.FC = () => {
           <nav className="flex flex-col space-y-3">
             <a 
               href="#about" 
-              className="text-white py-2 px-4 rounded-md hover:bg-accent/10 transition-all font-medium"
+              className="flex items-center gap-2 text-white py-2 px-4 rounded-md hover:bg-accent/10 transition-all font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About
+              <Info size={18} className="text-accent" />
+              <span>About</span>
             </a>
             <a 
               href="https://github.com/edge-mining/docs" 
@@ -120,15 +130,24 @@ const Header: React.FC = () => {
               <Github size={18} className="text-accent" />
               <span>Github</span>
             </a>
+            <a 
+              href="https://discord.gg/edgemining" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-white py-2 px-4 rounded-md hover:bg-accent/10 transition-all font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <Discord size={18} className="text-accent" />
+              <span>Discord</span>
+            </a>
             <Button 
               onClick={() => {
                 setIsMobileMenuOpen(false);
-                openSurvey();
+                openSurveyForm();
               }}
               variant="outline"
-              className="bg-transparent border border-accent text-white hover:bg-accent/20 flex items-center gap-1 justify-center"
+              className="bg-transparent border border-accent text-white hover:bg-accent/20 flex items-center justify-center"
             >
-              <ExternalLink size={16} className="text-accent" />
               <span>Survey</span>
             </Button>
           </nav>
