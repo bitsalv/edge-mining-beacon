@@ -25,8 +25,8 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				dark: '#1a1a1a',
-				'dark-accent': '#2a2a2a',
+				dark: '#668D38',
+				'dark-accent': '#566D38',
 				'light-text': '#ffffff',
 				'muted-text': '#a1a1a1',
 				primary: {
@@ -35,12 +35,12 @@ export default {
 					hover: '#7a7d82'
 				},
 				secondary: {
-					DEFAULT: '#8338ec',
+					DEFAULT: '#8E0CBB',
 					foreground: '#ffffff'
 				},
 				accent: {
-					DEFAULT: '#E9967A', // Warm complementary color (Dark Salmon)
-					foreground: '#1a1a1a'
+					DEFAULT: '#8E0CBB', // Purple warm color
+					foreground: '#ffffff'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',

@@ -39,6 +39,9 @@ const ContactForm: React.FC = () => {
         description: "Thanks for reaching out! We'll get back to you soon.",
       });
       form.reset();
+      
+      // Redirect to Discord
+      window.open("https://discord.gg/qpVU7wu9", "_blank");
     }, 1000);
     
     // In a real implementation, you would send this data to your backend
@@ -49,7 +52,7 @@ const ContactForm: React.FC = () => {
     <div className="w-full max-w-md mx-auto glass-effect p-6 rounded-lg border border-gray-800/50">
       <div className="flex items-center justify-center mb-6">
         <div className="h-12 w-12 flex items-center justify-center bg-accent rounded-full">
-          <MessageSquare size={24} className="text-dark" />
+          <MessageSquare size={24} className="text-white" />
         </div>
       </div>
       
@@ -106,7 +109,7 @@ const ContactForm: React.FC = () => {
           <Button 
             type="submit" 
             disabled={isSubmitting}
-            className="w-full bg-accent hover:bg-accent/80 text-dark font-medium"
+            className="w-full bg-accent hover:bg-accent/80 text-white font-medium"
           >
             {isSubmitting ? "Sending..." : "Join Discord"}
           </Button>

@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center justify-between mb-6">
           <div className="mb-6 md:mb-0">
             <img 
-              src="/lovable-uploads/693aa3a5-b345-4a9f-a41d-8313d07bdf3a.png" 
+              src="/lovable-uploads/52b0ec8b-cc4c-45fc-b170-16111d3df6e0.png" 
               alt="Edge Mining Logo" 
               className="h-10 w-auto object-contain" 
             />
@@ -24,21 +24,25 @@ const Footer: React.FC = () => {
               About
             </a>
             <a 
-              href="#contact-form" 
+              href="https://discord.gg/qpVU7wu9" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-light-text hover:text-accent transition-standard flex items-center gap-1"
             >
               <MessageSquare size={18} className="text-accent" />
               <span>Discord</span>
             </a>
             <a 
-              href="#" 
+              href="https://github.com/edge-mining/docs" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-light-text hover:text-accent transition-standard flex items-center gap-1"
             >
               <FileText size={18} className="text-accent" />
               <span>Docs</span>  
             </a>
             <a 
-              href="https://github.com/edgemining" 
+              href="https://github.com/edge-mining" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-light-text hover:text-accent transition-standard flex items-center gap-1"

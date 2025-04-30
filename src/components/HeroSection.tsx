@@ -15,17 +15,9 @@ const HeroSection: React.FC = () => {
       
       <div className="container max-w-7xl mx-auto z-10 animate-fade-in">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
-            <div className="mb-8 animate-float">
-              <img 
-                src="/lovable-uploads/693aa3a5-b345-4a9f-a41d-8313d07bdf3a.png" 
-                alt="Edge Mining Logo" 
-                className="h-28 md:h-36 mx-auto lg:mx-0 object-contain"
-              />
-            </div>
-            
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
-              Maximizing Renewable Energy Value Through Bitcoin Mining
+          <div className="text-center lg:text-left">            
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+              <span className="text-accent">Edge Mining</span>: <span className="text-white">maximizing energy value</span>
             </h1>
             
             <p className="text-xl text-light-text max-w-2xl mx-auto lg:mx-0 mb-8">
@@ -36,9 +28,9 @@ const HeroSection: React.FC = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-dark font-medium rounded-md transition-standard w-full sm:w-auto text-center"
+                className="bg-accent hover:bg-accent/90 text-white font-medium rounded-md transition-standard w-full sm:w-auto text-center"
               >
-                <a href="https://github.com/edgemining" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/edge-mining" target="_blank" rel="noopener noreferrer">GitHub</a>
               </Button>
               
               <Button 
@@ -47,7 +39,7 @@ const HeroSection: React.FC = () => {
                 size="lg"
                 className="border-gray-700 bg-dark-accent/50 hover:bg-dark-accent text-light-text font-medium rounded-md transition-standard w-full sm:w-auto text-center"
               >
-                <a href="#about">Documentation</a>
+                <a href="https://github.com/edge-mining/docs" target="_blank" rel="noopener noreferrer">Documentation</a>
               </Button>
             </div>
           </div>

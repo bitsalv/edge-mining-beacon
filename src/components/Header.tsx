@@ -19,7 +19,7 @@ const Header: React.FC = () => {
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <a href="#" className="flex items-center">
           <img 
-            src="/lovable-uploads/693aa3a5-b345-4a9f-a41d-8313d07bdf3a.png" 
+            src="/lovable-uploads/52b0ec8b-cc4c-45fc-b170-16111d3df6e0.png" 
             alt="Edge Mining Logo" 
             className="h-10 w-auto object-contain" 
           />
@@ -41,14 +41,16 @@ const Header: React.FC = () => {
             <span>Discord</span>
           </Button>
           <a 
-            href="#" 
+            href="https://github.com/edge-mining/docs" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-light-text hover:text-accent transition-standard flex items-center gap-1"
           >
             <FileText size={18} className="text-accent" />
             <span>Docs</span>
           </a>
           <a 
-            href="https://github.com/edgemining" 
+            href="https://github.com/edge-mining" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-light-text hover:text-accent transition-standard flex items-center gap-1"
@@ -106,7 +108,9 @@ const Header: React.FC = () => {
               <span>Discord</span>
             </Button>
             <a 
-              href="#" 
+              href="https://github.com/edge-mining/docs" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 text-light-text py-2 px-4 rounded-md hover:bg-dark transition-standard"
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -114,7 +118,7 @@ const Header: React.FC = () => {
               <span>Docs</span>
             </a>
             <a 
-              href="https://github.com/edgemining" 
+              href="https://github.com/edge-mining" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-light-text py-2 px-4 rounded-md hover:bg-dark transition-standard"
