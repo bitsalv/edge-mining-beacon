@@ -17,7 +17,7 @@ const ContactForm: React.FC = () => {
         className="w-full bg-accent hover:bg-accent/80 text-white font-medium transition-all gap-2"
       >
         <a href="https://app.formbricks.com/s/cma4k1hfj0jn7vw019sizlnio" target="_blank" rel="noopener noreferrer">
-          Complete Survey
+          Complete the survey
           <FileText size={16} className="ml-1" />
         </a>
       </Button>
