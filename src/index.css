@@ -50,10 +50,18 @@
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-400 via-accent to-purple-400 bg-clip-text text-transparent;
   }
   
   .card-hover {
     @apply transition-all duration-300 hover:shadow-lg hover:shadow-blue-900/20 hover:scale-105;
+  }
+
+  .accent-glow {
+    @apply relative after:absolute after:inset-0 after:bg-accent/10 after:blur-xl after:opacity-0 hover:after:opacity-100 after:transition-opacity;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-sm bg-white/5 border border-white/10;
   }
 }

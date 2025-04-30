@@ -9,11 +9,12 @@ const AboutSection: React.FC = () => {
     <section id="about" className="py-24 px-4 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-dark to-dark-accent opacity-50 pointer-events-none"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/5 rounded-full filter blur-3xl"></div>
       
       <div className="container max-w-5xl mx-auto relative z-10">
         <div className="flex flex-col md:flex-row gap-12">
           <div className="md:w-1/2">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-accent">
               About Edge Mining
             </h2>
             
@@ -27,7 +28,7 @@ const AboutSection: React.FC = () => {
           </div>
           
           <div className="md:w-1/2">
-            <Card className="bg-dark-accent/70 backdrop-blur-sm border border-gray-800 shadow-xl shadow-blue-900/5">
+            <Card className="glass-effect shadow-xl shadow-accent/5 border-accent/20">
               <CardContent className="p-8">
                 <h3 className="font-display text-xl font-semibold mb-6 text-white">Key Features</h3>
                 
@@ -39,7 +40,7 @@ const AboutSection: React.FC = () => {
                     "Open-source and free to use"
                   ].map((feature, index) => (
                     <li key={index} className="flex items-start group">
-                      <div className="mr-4 mt-1 text-blue-400 group-hover:text-blue-300 transition-standard">
+                      <div className="mr-4 mt-1 text-accent group-hover:text-accent/80 transition-standard">
                         <CheckCircle size={18} />
                       </div>
                       <span className="text-light-text group-hover:text-white transition-standard">{feature}</span>

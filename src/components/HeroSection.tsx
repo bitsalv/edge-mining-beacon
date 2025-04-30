@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(58,134,255,0.15)_0,rgba(17,24,39,0)_70%)]"></div>
         <div className="absolute top-1/4 -left-20 w-72 h-72 bg-blue-500/10 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-1/4 -right-20 w-72 h-72 bg-purple-500/10 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-1/4 -right-20 w-72 h-72 bg-accent/15 rounded-full filter blur-3xl"></div>
       </div>
       
       <div className="container max-w-5xl mx-auto text-center z-10 animate-fade-in">
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
           <Button
             asChild
             size="lg"
-            className="bg-primary hover:bg-primary-hover text-white font-medium rounded-md transition-standard w-full sm:w-auto text-center"
+            className="bg-gradient-to-r from-blue-500 to-accent hover:from-blue-600 hover:to-accent/90 text-white font-medium rounded-md transition-standard w-full sm:w-auto text-center"
           >
             <a href="#get-involved">Get Involved</a>
           </Button>

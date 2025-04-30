@@ -5,9 +5,9 @@ import { Github } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-12 px-4 border-t border-gray-800 relative overflow-hidden">
+    <footer className="py-12 px-4 border-t border-gray-800/30 relative overflow-hidden">
       {/* Background element */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(58,134,255,0.05),transparent_70%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(0,229,176,0.03),transparent_70%)]"></div>
       
       <div className="container max-w-5xl mx-auto relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between">
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
               href="https://github.com/edgemining" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-text hover:text-blue-400 transition-standard"
+              className="text-muted-text hover:text-accent transition-standard"
               aria-label="GitHub"
             >
               <Github size={20} />
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
               href="https://discord.gg/edgemining" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-text hover:text-purple-400 transition-standard"
+              className="text-muted-text hover:text-blue-400 transition-standard"
               aria-label="Discord"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <div className="mt-8 pt-8 border-t border-gray-800/50 text-center md:text-left">
+        <div className="mt-8 pt-8 border-t border-gray-800/20 text-center md:text-left">
           <p className="text-sm text-muted-text">
             &copy; {new Date().getFullYear()} Edge Mining. All rights reserved.
           </p>
