@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Github, FileText, Info, MessageCircle } from 'lucide-react';
+import { Info, MessageCircle, FileText, Github } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <a href="#" className="flex items-center">
           <img 
-            src="/lovable-uploads/52b0ec8b-cc4c-45fc-b170-16111d3df6e0.png" 
+            src="/lovable-uploads/0a669fce-4c43-46a0-8acb-86a36896c8f5.png" 
             alt="Edge Mining Logo" 
             className="h-10 w-auto object-contain hover:opacity-90 transition-all" 
           />
@@ -32,6 +32,15 @@ const Header: React.FC = () => {
           >
             <Info size={18} className="text-white" />
             <span>About</span>
+          </a>
+          <a 
+            href="https://discord.gg/edgemining" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white hover:text-white/80 transition-all font-medium flex items-center gap-1"
+          >
+            <MessageCircle size={18} className="text-white" />
+            <span>Discord</span>
           </a>
           <a 
             href="https://github.com/edge-mining/docs" 
@@ -50,15 +59,6 @@ const Header: React.FC = () => {
           >
             <Github size={18} className="text-white" />
             <span>Github</span>
-          </a>
-          <a 
-            href="https://discord.gg/edgemining" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-white hover:text-white/80 transition-all font-medium flex items-center gap-1"
-          >
-            <MessageCircle size={18} className="text-white" />
-            <span>Discord</span>
           </a>
         </div>
 
@@ -100,6 +100,16 @@ const Header: React.FC = () => {
               <span>About</span>
             </a>
             <a 
+              href="https://discord.gg/edgemining" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-white py-2 px-4 rounded-md hover:bg-white/10 transition-all font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <MessageCircle size={18} className="text-white" />
+              <span>Discord</span>
+            </a>
+            <a 
               href="https://github.com/edge-mining/docs" 
               target="_blank"
               rel="noopener noreferrer"
@@ -118,16 +128,6 @@ const Header: React.FC = () => {
             >
               <Github size={18} className="text-white" />
               <span>Github</span>
-            </a>
-            <a 
-              href="https://discord.gg/edgemining" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-white py-2 px-4 rounded-md hover:bg-white/10 transition-all font-medium"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              <MessageCircle size={18} className="text-white" />
-              <span>Discord</span>
             </a>
           </nav>
         </div>

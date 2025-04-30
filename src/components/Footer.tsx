@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { Github, MessageSquare, FileText } from 'lucide-react';
+import { Info, MessageCircle, FileText, Github } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -12,16 +12,17 @@ const Footer: React.FC = () => {
       <div className="container max-w-5xl mx-auto relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-center mb-8">
           <div className="flex items-center space-x-8">
-            <a href="#about" className="text-light-text hover:text-accent transition-all font-medium">
-              About
+            <a href="#about" className="text-light-text hover:text-accent transition-all flex items-center gap-2 font-medium">
+              <Info size={18} className="text-accent" />
+              <span>About</span>
             </a>
             <a 
-              href="https://discord.gg/qpVU7wu9" 
+              href="https://discord.gg/edgemining" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-light-text hover:text-accent transition-all flex items-center gap-2 font-medium"
             >
-              <MessageSquare size={18} className="text-accent" />
+              <MessageCircle size={18} className="text-accent" />
               <span>Discord</span>
             </a>
             <a 

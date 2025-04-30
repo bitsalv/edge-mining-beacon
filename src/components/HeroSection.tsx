@@ -17,14 +17,6 @@ const HeroSection: React.FC = () => {
       <div className="container max-w-7xl mx-auto z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="text-center lg:text-left animate-slide-up">
-            <div className="flex justify-center lg:justify-start mb-6">
-              <img 
-                src="/lovable-uploads/0a669fce-4c43-46a0-8acb-86a36896c8f5.png" 
-                alt="Edge Mining Logo" 
-                className="h-16 w-auto"
-              />
-            </div>
-            
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
               <span className="text-accent inline-block animate-pulse-slow">Edge Mining</span>: <span className="text-light-text">maximizing energy value</span>
             </h1>
