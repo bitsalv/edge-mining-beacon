@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="text-center lg:text-left animate-slide-up">            
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
-              <span className="text-accent inline-block animate-pulse-slow">Edge Mining</span>: <span className="text-white">maximizing energy value</span>
+              <span className="text-accent inline-block animate-pulse-slow">Edge Mining</span>: <span className="text-light-text">maximizing energy value</span>
             </h1>
             
             <p className="text-xl text-light-text/80 max-w-xl mx-auto lg:mx-0 mb-10">
@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-accent/20 bg-dark-accent/30 hover:bg-accent/10 text-light-text font-medium rounded-md transition-all w-full sm:w-auto text-center border"
+                className="border-accent/20 bg-white hover:bg-accent/5 text-light-text font-medium rounded-md transition-all w-full sm:w-auto text-center border"
               >
                 <a href="https://github.com/edge-mining/docs" target="_blank" rel="noopener noreferrer">Documentation</a>
               </Button>
@@ -46,7 +46,7 @@ const HeroSection: React.FC = () => {
           </div>
           
           <div id="contact-form" className="w-full max-w-md mx-auto backdrop-blur-sm">
-            <div className="bg-dark-accent/50 border border-accent/10 rounded-xl p-6 shadow-lg hover:shadow-accent/5 transition-all">
+            <div className="bg-white/80 border border-accent/10 rounded-xl p-6 shadow-md hover:shadow-accent/5 transition-all">
               <ContactForm />
             </div>
           </div>

@@ -49,14 +49,14 @@ const ContactForm: React.FC = () => {
   }
 
   return (
-    <div className="w-full max-w-md mx-auto glass-effect p-6 rounded-lg border border-gray-800/50">
+    <div className="w-full max-w-md mx-auto">
       <div className="flex items-center justify-center mb-6">
         <div className="h-12 w-12 flex items-center justify-center bg-accent rounded-full">
           <MessageSquare size={24} className="text-white" />
         </div>
       </div>
       
-      <h3 className="text-xl font-display font-semibold mb-4 text-center text-white">Join our Discord</h3>
+      <h3 className="text-xl font-display font-semibold mb-4 text-center text-light-text">Join our Discord</h3>
       
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -67,7 +67,7 @@ const ContactForm: React.FC = () => {
               <FormItem>
                 <FormLabel className="text-light-text">Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="Your name" className="bg-dark-accent/50 border-gray-700 text-light-text" {...field} />
+                  <Input placeholder="Your name" className="bg-white border-gray-200 text-light-text" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -81,7 +81,7 @@ const ContactForm: React.FC = () => {
               <FormItem>
                 <FormLabel className="text-light-text">Email</FormLabel>
                 <FormControl>
-                  <Input placeholder="Your email" className="bg-dark-accent/50 border-gray-700 text-light-text" {...field} />
+                  <Input placeholder="Your email" className="bg-white border-gray-200 text-light-text" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -97,7 +97,7 @@ const ContactForm: React.FC = () => {
                 <FormControl>
                   <Textarea 
                     placeholder="How can we help you?" 
-                    className="bg-dark-accent/50 border-gray-700 text-light-text min-h-[120px]" 
+                    className="bg-white border-gray-200 text-light-text min-h-[120px]" 
                     {...field} 
                   />
                 </FormControl>

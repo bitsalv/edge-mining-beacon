@@ -16,26 +16,26 @@ const ComingSoonSection: React.FC = () => {
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="glass-effect border border-gray-800/20 shadow-xl overflow-hidden group hover:border-gray-800/50 transition-all duration-300">
+          <Card className="glass-effect border border-accent/10 shadow-md overflow-hidden group hover:border-accent/20 transition-all duration-300">
             <CardContent className="p-8 relative">
               <div className="absolute top-0 right-0 w-24 h-24 bg-accent/10 rounded-bl-full"></div>
               <div className="mb-6 w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
-                <BookOpen size={24} className="text-dark" />
+                <BookOpen size={24} className="text-white" />
               </div>
-              <h3 className="text-xl font-display font-semibold mb-4 text-white">Documentation</h3>
+              <h3 className="text-xl font-display font-semibold mb-4 text-light-text">Documentation</h3>
               <p className="text-muted-text">
                 Complete guides and step-by-step tutorials on integrating Edge Mining with your renewable energy system for optimal results.
               </p>
             </CardContent>
           </Card>
           
-          <Card className="glass-effect border border-gray-800/20 shadow-xl overflow-hidden group hover:border-gray-800/50 transition-all duration-300">
+          <Card className="glass-effect border border-accent/10 shadow-md overflow-hidden group hover:border-accent/20 transition-all duration-300">
             <CardContent className="p-8 relative">
               <div className="absolute top-0 right-0 w-24 h-24 bg-accent/10 rounded-bl-full"></div>
               <div className="mb-6 w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
-                <BarChart2 size={24} className="text-dark" />
+                <BarChart2 size={24} className="text-white" />
               </div>
-              <h3 className="text-xl font-display font-semibold mb-4 text-white">Blog</h3>
+              <h3 className="text-xl font-display font-semibold mb-4 text-light-text">Blog</h3>
               <p className="text-muted-text">
                 Coming soon! Stay updated with case studies, best practices, and insights from our team and community members.
               </p>

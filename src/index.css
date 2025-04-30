@@ -34,14 +34,14 @@
   }
   
   html {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     scroll-behavior: smooth;
   }
   
   body {
     @apply bg-dark text-light-text;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02";
-    background-image: radial-gradient(circle at 50% 20%, #1A1F2C, #12151f);
+    background-image: radial-gradient(circle at 50% 20%, #f5f7fa, #e8eef7);
   }
 }
 
@@ -63,7 +63,7 @@
   }
 
   .glass-effect {
-    @apply backdrop-blur-md bg-dark-accent/80 border border-white/10 rounded-lg shadow-lg;
+    @apply backdrop-blur-md bg-white/90 border border-accent/10 rounded-lg shadow-md;
   }
   
   .text-gradient {
@@ -77,7 +77,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #1A1F2C;
+  background: #f5f7fa;
 }
 
 ::-webkit-scrollbar-thumb {

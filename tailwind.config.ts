@@ -26,13 +26,13 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				dark: {
-					DEFAULT: '#1A1F2C',
-					accent: '#2A2F3C'
+					DEFAULT: '#f5f7fa', // Switched to lighter color
+					accent: '#e8eef7'   // Subtle light accent
 				},
-				'light-text': '#ffffff',
-				'muted-text': '#a1a1a1',
+				'light-text': '#333333', // Darker text on light background
+				'muted-text': '#6B7280',
 				primary: {
-					DEFAULT: '#9b87f5', // Updated to a nicer purple shade
+					DEFAULT: '#9b87f5', // Purple shade
 					foreground: '#ffffff',
 					hover: '#8a76e4'
 				},
@@ -41,7 +41,7 @@ export default {
 					foreground: '#ffffff'
 				},
 				accent: {
-					DEFAULT: '#8E0CBB', // Purple warm color
+					DEFAULT: '#8E0CBB',      // Purple accent
 					foreground: '#ffffff',
 					soft: 'rgba(142, 12, 187, 0.1)' // For subtle backgrounds
 				},
@@ -63,13 +63,16 @@ export default {
 				}
 			},
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
-				display: ['Space Grotesk', 'system-ui', 'sans-serif']
+				sans: ['Poppins', 'system-ui', 'sans-serif'],
+				display: ['Outfit', 'system-ui', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			scale: {
+				'103': '1.03',
 			},
 			keyframes: {
 				'accordion-down': {
@@ -120,7 +123,7 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'gradient-hero': 'linear-gradient(180deg, rgba(26,31,44,1) 0%, rgba(26,31,44,0.9) 100%)'
+				'gradient-hero': 'linear-gradient(180deg, rgba(245,247,250,1) 0%, rgba(232,238,247,0.9) 100%)'
 			}
 		}
 	},

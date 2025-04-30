@@ -27,9 +27,9 @@ const AboutSection: React.FC = () => {
           </div>
           
           <div className="md:w-1/2">
-            <Card className="glass-effect shadow-xl shadow-accent/5 border-accent/20">
+            <Card className="glass-effect shadow-md border-accent/10">
               <CardContent className="p-8">
-                <h3 className="font-display text-xl font-semibold mb-6 text-white">Key Features</h3>
+                <h3 className="font-display text-xl font-semibold mb-6 text-light-text">Key Features</h3>
                 
                 <ul className="space-y-4">
                   {[

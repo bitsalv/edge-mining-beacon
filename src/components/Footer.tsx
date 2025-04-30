@@ -5,7 +5,7 @@ import { Github, MessageSquare, FileText } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-16 px-4 relative overflow-hidden">
+    <footer className="py-16 px-4 relative overflow-hidden bg-accent/5">
       {/* Background element */}
       <div className="absolute inset-0 bg-gradient-to-b from-dark to-dark-accent"></div>
       
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <div className="pt-8 border-t border-white/10 text-center">
+        <div className="pt-8 border-t border-accent/10 text-center">
           <p className="text-sm text-muted-text">
             Edge Mining is a FOSS project.
           </p>
