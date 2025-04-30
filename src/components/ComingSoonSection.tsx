@@ -16,10 +16,10 @@ const ComingSoonSection: React.FC = () => {
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="glass-effect border border-blue-900/20 shadow-xl overflow-hidden group hover:border-blue-900/50 transition-all duration-300">
+          <Card className="glass-effect border border-gray-800/20 shadow-xl overflow-hidden group hover:border-gray-800/50 transition-all duration-300">
             <CardContent className="p-8 relative">
               <div className="absolute top-0 right-0 w-24 h-24 bg-accent/10 rounded-bl-full"></div>
-              <div className="mb-6 w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto group-hover:scale-110 transition-transform animate-pulse-slow">
+              <div className="mb-6 w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
                 <BookOpen size={24} className="text-dark" />
               </div>
               <h3 className="text-xl font-display font-semibold mb-4 text-white">Documentation</h3>
@@ -29,10 +29,10 @@ const ComingSoonSection: React.FC = () => {
             </CardContent>
           </Card>
           
-          <Card className="glass-effect border border-accent/20 shadow-xl overflow-hidden group hover:border-accent/40 transition-all duration-300">
+          <Card className="glass-effect border border-gray-800/20 shadow-xl overflow-hidden group hover:border-gray-800/50 transition-all duration-300">
             <CardContent className="p-8 relative">
               <div className="absolute top-0 right-0 w-24 h-24 bg-accent/10 rounded-bl-full"></div>
-              <div className="mb-6 w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto group-hover:scale-110 transition-transform animate-pulse-slow">
+              <div className="mb-6 w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
                 <BarChart2 size={24} className="text-dark" />
               </div>
               <h3 className="text-xl font-display font-semibold mb-4 text-white">Blog</h3>
