@@ -32,18 +32,18 @@ export default {
 				'light-text': '#333333', // Darker text on light background
 				'muted-text': '#6B7280',
 				primary: {
-					DEFAULT: '#9b87f5', // Purple shade
+					DEFAULT: '#428768', // Updated from purple to the requested color
 					foreground: '#ffffff',
-					hover: '#8a76e4'
+					hover: '#357357' // Slightly darker shade for hover
 				},
 				secondary: {
-					DEFAULT: '#8E0CBB',
+					DEFAULT: '#428768', // Updated from #8E0CBB
 					foreground: '#ffffff'
 				},
 				accent: {
-					DEFAULT: '#8E0CBB',      // Purple accent
+					DEFAULT: '#428768',      // Updated from purple accent
 					foreground: '#ffffff',
-					soft: 'rgba(142, 12, 187, 0.1)' // For subtle backgrounds
+					soft: 'rgba(66, 135, 104, 0.1)' // For subtle backgrounds, updated RGBA value
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
