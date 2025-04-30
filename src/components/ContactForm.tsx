@@ -9,7 +9,7 @@ const ContactForm: React.FC = () => {
       <h3 className="text-2xl font-display font-semibold mb-6 text-center text-light-text">Ready to Shape the Future?</h3>
       
       <p className="text-light-text/90 mb-6 text-center">
-        Join forward-thinking energy producers revolutionizing renewable resources. Your feedback drives our innovation – take our quick survey and be part of the edge mining movement!
+        Your feedback drives our innovation, take our quick survey and be part of the edge mining movement!
       </p>
       
       <Button 

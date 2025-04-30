@@ -33,10 +33,12 @@ const GetInvolvedSection: React.FC = () => {
               <div className="h-12 w-12 flex items-center justify-center bg-accent rounded-lg mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <MessageCircle size={24} className="text-white" />
               </div>
-              <h3 className="text-xl font-display font-semibold mb-4 text-light-text">Join Discord</h3>
+              <h3 className="text-xl font-display font-semibold mb-4 text-light-text">Discord</h3>
               <p className="text-muted-text mb-6 flex-grow">Connect with our community to discuss ideas, ask questions, and collaborate on new features.</p>
-              <Button onClick={scrollToForm} className="bg-accent hover:bg-accent/80 text-white font-medium border-0 w-full">
-                Join Discord
+              <Button asChild className="bg-accent hover:bg-accent/80 text-white font-medium border-0 w-full">
+                <a href="https://discord.gg/qpVU7wu9" target="_blank" rel="noopener noreferrer">
+                  Join
+                </a>
               </Button>
             </CardContent>
           </Card>
@@ -46,11 +48,11 @@ const GetInvolvedSection: React.FC = () => {
               <div className="h-12 w-12 flex items-center justify-center bg-accent rounded-lg mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <Github size={24} className="text-white" />
               </div>
-              <h3 className="text-xl font-display font-semibold mb-4 text-light-text">View on GitHub</h3>
+              <h3 className="text-xl font-display font-semibold mb-4 text-light-text">GitHub</h3>
               <p className="text-muted-text mb-6 flex-grow">Explore our codebase, contribute to development, or fork the project to create your own solution.</p>
               <Button asChild className="bg-accent hover:bg-accent/80 text-white font-medium border-0 w-full">
                 <a href="https://github.com/edgemining" target="_blank" rel="noopener noreferrer">
-                  View Code
+                  View
                 </a>
               </Button>
             </CardContent>

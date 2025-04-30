@@ -16,6 +16,10 @@ const ComingSoonSection: React.FC = () => {
           Resources
         </h2>
         
+        <p className="text-xl text-muted-text max-w-2xl mx-auto mb-12">
+          Join our growing community of developers and energy enthusiasts. Together, we're building the future of renewable energy optimization.
+        </p>
+        
         <div className="grid md:grid-cols-2 gap-8">
           <Card className="glass-effect border border-accent/10 shadow-md overflow-hidden group hover:border-accent/20 transition-all duration-300">
             <CardContent className="p-8 relative">
@@ -33,7 +37,7 @@ const ComingSoonSection: React.FC = () => {
                 className="bg-transparent border border-accent text-light-text hover:bg-accent/10"
               >
                 <a href="https://github.com/edge-mining/docs" target="_blank" rel="noopener noreferrer">
-                  View Documentation
+                  View
                 </a>
               </Button>
             </CardContent>
