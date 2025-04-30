@@ -40,7 +40,7 @@ export default {
 				},
 				accent: {
 					DEFAULT: '#00e5b0', // Teal accent color
-					foreground: '#ffffff'
+					foreground: '#1a1a1a'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -57,16 +57,6 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
-				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
 			fontFamily: {

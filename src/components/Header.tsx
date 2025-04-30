@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Github, FileText } from 'lucide-react';
+import { Github, FileText, MessageSquare } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -29,10 +29,11 @@ const Header: React.FC = () => {
           </a>
           <Button 
             variant="ghost" 
-            className="text-muted-text hover:text-light-text transition-standard"
+            className="text-muted-text hover:text-light-text transition-standard flex items-center gap-1"
             onClick={scrollToForm}
           >
-            Contact
+            <MessageSquare size={18} />
+            <span>Discord</span>
           </Button>
           <div className="pl-2 border-l border-gray-700">
             <a 
@@ -93,14 +94,15 @@ const Header: React.FC = () => {
               About
             </a>
             <Button
-              className="justify-start text-light-text py-2 px-4 rounded-md hover:bg-dark transition-standard"
+              className="justify-start text-light-text py-2 px-4 rounded-md hover:bg-dark transition-standard flex items-center gap-2"
               variant="ghost"
               onClick={() => {
                 scrollToForm();
                 setIsMobileMenuOpen(false);
               }}
             >
-              Contact
+              <MessageSquare size={18} />
+              <span>Discord</span>
             </Button>
             <a 
               href="https://github.com/edgemining" 

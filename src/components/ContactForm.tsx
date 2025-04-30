@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "@/components/ui/use-toast";
-import { Mail } from 'lucide-react';
+import { MessageSquare } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -48,12 +48,12 @@ const ContactForm: React.FC = () => {
   return (
     <div className="w-full max-w-md mx-auto glass-effect p-6 rounded-lg border border-gray-800/50">
       <div className="flex items-center justify-center mb-6">
-        <div className="h-12 w-12 flex items-center justify-center bg-gradient-to-br from-accent/80 to-accent rounded-full">
-          <Mail size={24} className="text-dark" />
+        <div className="h-12 w-12 flex items-center justify-center bg-accent rounded-full">
+          <MessageSquare size={24} className="text-dark" />
         </div>
       </div>
       
-      <h3 className="text-xl font-display font-semibold mb-4 text-center text-white">Get in touch</h3>
+      <h3 className="text-xl font-display font-semibold mb-4 text-center text-white">Join our Discord</h3>
       
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -106,9 +106,9 @@ const ContactForm: React.FC = () => {
           <Button 
             type="submit" 
             disabled={isSubmitting}
-            className="w-full bg-gradient-to-r from-accent/90 to-accent hover:from-accent hover:to-accent/80 text-dark font-medium"
+            className="w-full bg-accent hover:bg-accent/80 text-dark font-medium"
           >
-            {isSubmitting ? "Sending..." : "Send Message"}
+            {isSubmitting ? "Sending..." : "Join Discord"}
           </Button>
         </form>
       </Form>

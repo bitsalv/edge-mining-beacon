@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="py-12 px-4 border-t border-gray-800/30 relative overflow-hidden">
       {/* Background element */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(0,229,176,0.03),transparent_70%)]"></div>
+      <div className="absolute inset-0 bg-dark"></div>
       
       <div className="container max-w-5xl mx-auto relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between">
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
         
         <div className="mt-8 pt-8 border-t border-gray-800/20 text-center md:text-left">
           <p className="text-sm text-muted-text">
-            &copy; {new Date().getFullYear()} Edge Mining. All rights reserved.
+            Edge Mining is a FOSS project. &copy; {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
       </div>
