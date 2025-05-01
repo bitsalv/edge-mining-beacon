@@ -1,3 +1,4 @@
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
@@ -19,4 +20,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Base path for GitHub Pages - sarà il nome del repository
+  // Deve essere commentato durante lo sviluppo locale
+  // base: '/nome-repository/',
 }));
