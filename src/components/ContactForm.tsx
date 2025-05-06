@@ -6,10 +6,10 @@ import { FileText } from 'lucide-react';
 const ContactForm: React.FC = () => {
   return (
     <div className="w-full max-w-md mx-auto">      
-      <h3 className="text-2xl font-display font-semibold mb-6 text-center text-light-text">Ready to Shape the Future?</h3>
+      <h3 className="text-2xl font-display font-semibold mb-6 text-center text-light-text">🚀 Ready to Shape the Future?</h3>
       
       <p className="text-light-text/90 mb-6 text-center">
-        Your feedback drives our innovation, take our quick survey and be part of the edge mining movement!
+        Edge Mining is in alpha, and your feedback shapes our innovation. Take our quick survey and join the movement!
       </p>
       
       <Button 

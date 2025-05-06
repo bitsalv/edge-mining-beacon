@@ -26,24 +26,24 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				dark: {
-					DEFAULT: '#f5f7fa', // Switched to lighter color
-					accent: '#e8eef7'   // Subtle light accent
+					DEFAULT: '#f5f7fa', // Kept light color
+					accent: '#e8eef7'   // Kept light accent
 				},
-				'light-text': '#333333', // Darker text on light background
+				'light-text': '#333333', // Kept darker text on light background
 				'muted-text': '#6B7280',
 				primary: {
-					DEFAULT: '#428768', // Updated to specified color
+					DEFAULT: '#93C47D', // Updated to the green color from the image
 					foreground: '#ffffff',
-					hover: '#357357' // Slightly darker shade for hover
+					hover: '#7FB265' // Slightly darker shade for hover
 				},
 				secondary: {
-					DEFAULT: '#428768', // Updated to specified color
+					DEFAULT: '#93C47D', // Updated to the green color from the image
 					foreground: '#ffffff'
 				},
 				accent: {
-					DEFAULT: '#428768',      // Updated to specified color
+					DEFAULT: '#93C47D',      // Updated to the green color from the image
 					foreground: '#ffffff',
-					soft: 'rgba(66, 135, 104, 0.1)' // For subtle backgrounds, updated RGBA value
+					soft: 'rgba(147, 196, 125, 0.1)' // For subtle backgrounds, updated RGBA value
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',

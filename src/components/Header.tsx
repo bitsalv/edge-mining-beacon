@@ -19,7 +19,7 @@ const Header: React.FC = () => {
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <a href="#" className="flex items-center">
           <img 
-            src="/lovable-uploads/0a669fce-4c43-46a0-8acb-86a36896c8f5.png" 
+            src="/lovable-uploads/f8c622f1-7908-487e-8d57-63025ddd8a11.png" 
             alt="Edge Mining Logo" 
             className="h-10 w-auto object-contain hover:opacity-90 transition-all" 
           />

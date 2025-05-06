@@ -18,11 +18,11 @@ const HeroSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="text-center lg:text-left animate-slide-up">
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
-              <span className="text-accent inline-block animate-pulse-slow">Edge Mining</span>: <span className="text-light-text">maximizing energy value</span>
+              <span className="text-accent inline-block animate-pulse-slow">Edge Mining:</span> <span className="text-light-text">mine your energy</span>
             </h1>
             
             <p className="text-xl text-light-text/80 max-w-xl mx-auto lg:mx-0 mb-10">
-              Convert surplus renewable energy into Bitcoin with our intelligent, automated mining solution designed specifically for green energy producers.
+              A research-driven, open-source project turning surplus energy into Bitcoin-powered digital value.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
                 size="lg"
                 className="border-accent/20 bg-white hover:bg-accent/5 text-light-text font-medium rounded-md transition-all w-full sm:w-auto text-center border"
               >
-                <a href="https://github.com/edge-mining/docs" target="_blank" rel="noopener noreferrer">Documentation</a>
+                <a href="https://github.com/edge-mining/docs" target="_blank" rel="noopener noreferrer">Docs</a>
               </Button>
             </div>
           </div>
